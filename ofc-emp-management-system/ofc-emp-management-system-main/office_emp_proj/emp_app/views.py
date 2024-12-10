@@ -10,9 +10,9 @@ def index(request):
 
 
 def all_emp(request):
-    emps = Employee.objects.all()
+    emps =Employee.objects.all()
     context = {
-        'emps': emps
+        'emps':emps
     }
     print(context)
     return render(request, 'view_all_emp.html', context)
